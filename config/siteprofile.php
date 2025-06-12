@@ -1,5 +1,5 @@
 <?php
-
+//config/siteprofile.php
 return [
     'data' => [
         'misi' => 'Misi kami adalah menyederhanakan proses perpindahan bagi setiap individu dan bisnis. Kami berkomitmen untuk menjaga setiap barang Anda dengan penuh tanggung jawab, memastikan semuanya tiba di tujuan dengan selamat, tepat waktu, dan sesuai dengan harapan Anda.',
