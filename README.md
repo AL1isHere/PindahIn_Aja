@@ -60,7 +60,7 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal A
 ### 2. Clone Repositori
 Buka terminal dan clone repositori ini:
 ```bash
-git clone [https://github.com/AL1isHere/PindahIn_Aja.git](https://github.com/AL1isHere/PindahIn_Aja.git)
+git clone https://github.com/AL1isHere/PindahIn_Aja.git
 cd PindahIn_Aja
 ```
 
