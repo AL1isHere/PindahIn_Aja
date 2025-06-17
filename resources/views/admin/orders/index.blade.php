@@ -32,6 +32,7 @@
                         $statusClass = '';
                         if ($order->status == 'Request') $statusClass = 'bg-yellow-100 text-yellow-800';
                         elseif ($order->status == 'Approved') $statusClass = 'bg-blue-100 text-blue-800';
+                        elseif ($order->status == 'Rejected') $statusClass = 'bg-red-100 text-red-800';
                         else $statusClass = 'bg-green-100 text-green-800';
                     @endphp
                     <span class="px-2 py-1 text-xs font-medium rounded-full {{ $statusClass }}">{{ $order->status }}</span>
@@ -44,6 +45,7 @@
                             <option value="Request" @if($order->status == 'Request') selected @endif>Request</option>
                             <option value="Approved" @if($order->status == 'Approved') selected @endif>Approved</option>
                             <option value="Selesai" @if($order->status == 'Selesai') selected @endif>Selesai</option>
+                            <option value="Rejected" @if($order->status == 'Rejected') selected @endif>Rejected</option>
                         </select>
                     </form>
                 </td>

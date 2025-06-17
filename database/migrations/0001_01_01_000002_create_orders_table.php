@@ -16,7 +16,7 @@ return new class extends Migration
             $table->text('alamat_asal');
             $table->text('alamat_tujuan');
             $table->date('tanggal_pindahan');
-            $table->enum('status', ['Request', 'Approved', 'Selesai'])->default('Request');
+            $table->enum('status', ['Request', 'Approved', 'Selesai', 'Rejected'])->default('Request');
             $table->foreignId('package_id')->nullable()->constrained('packages')->onDelete('set null');
             $table->timestamps();
         });

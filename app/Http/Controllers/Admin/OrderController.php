@@ -24,7 +24,7 @@ class OrderController extends Controller
      */
     public function updateStatus(Request $request, Order $order)
     {
-        $request->validate(['status' => 'required|in:Request,Approved,Selesai']);
+        $request->validate(['status' => 'required|in:Request,Approved,Selesai,Rejected']);
 
         $order->update(['status' => $request->status]);
 
