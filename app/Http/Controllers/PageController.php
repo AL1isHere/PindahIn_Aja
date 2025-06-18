@@ -46,12 +46,12 @@ class PageController extends Controller
             'nomor_telepon' => 'required|string|max:20',
             'alamat_asal' => 'required|string',
             'alamat_tujuan' => 'required|string',
-            'tanggal_pindahan' => 'required|date',
+            'tanggal_pindahan' => 'required|date|after:today',
             'package_id' => 'required|exists:packages,id',
         ]);
 
         Order::create($request->all());
 
-        return redirect()->route('home')->with('success', 'Pesanan Anda telah berhasil dikirim! Kami akan segera menghubungi Anda.');
+        return redirect()->route('home')->with('success', 'Pesanan Anda telah berhasil dikirim! Silahkan cek Email anda secara bekala.');
     }
 }
